@@ -45,5 +45,5 @@ document.querySelector('#tirar').onclick = function () {
         document.getElementById('segundo_dado').style.animationName = 'cubo_calavera';
       }
     }
-  }, 15);
+  }, 20);
 };
