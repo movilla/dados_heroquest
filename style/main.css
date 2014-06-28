@@ -91,42 +91,42 @@ a.num_dados {
 
 .cubo3d div{
   position: absolute;
-  width:60px;
-  height:60px;
-  border:1px solid #ccc;
-  background:rgba(255,255,255,0.8);
-  box-shadow:inset 0 0 20px rgba(0,0,0,.2);
-  text-align:center;
-  font-size:100px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ccc;
+  background: rgba(255,255,255,0.8);
+  box-shadow: inset 0 0 20px rgba(0,0,0,.2);
+  text-align: center;
+  font-size: 100px;
 }
 
 .cubo3d .cara1 {
-  -moz-transform:translateZ(30px);
-  transform:translateZ(30px);
+  -moz-transform: translateZ(30px);
+  transform: translateZ(30px);
 }
 .cubo3d .cara2 {
-  -moz-transform:rotateY(90deg) translateZ(30px);
-  transform:rotateY(90deg) translateZ(30px);
+  -moz-transform: rotateY(90deg) translateZ(30px);
+  transform: rotateY(90deg) translateZ(30px);
 }
 
 .cubo3d .cara3 {
-  -moz-transform:rotateY(90deg) rotateX(90deg) translateZ(30px);
-  transform:rotateY(90deg) rotateX(90deg) translateZ(30px);
+  -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(30px);
+  transform: rotateY(90deg) rotateX(90deg) translateZ(30px);
 }
 
 .cubo3d .cara4 {
-  -moz-transform:rotateY(180deg) rotateZ(90deg) translateZ(30px);
-  transform:rotateY(180deg) rotateZ(90deg) translateZ(30px);
+  -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(30px);
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(30px);
 }
 
 .cubo3d .cara5 {
-  -moz-transform:rotateY(-90deg) rotateZ(90deg) translateZ(30px);
-  transform:rotateY(-90deg) rotateZ(90deg) translateZ(30px);
+  -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(30px);
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(30px);
 }
 
 .cubo3d .cara6 {
-  -moz-transform:rotateX(-90deg) translateZ(30px);
-  transform:rotateX(-90deg) translateZ(30px);
+  -moz-transform: rotateX(-90deg) translateZ(30px);
+  transform: rotateX(-90deg) translateZ(30px);
 }
 
 .calavera:before {
