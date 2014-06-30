@@ -35,8 +35,6 @@ document.querySelector('#tirar_2').onclick = function () {
 	var tercer_dado = document.getElementById('tercer_dado');
     	segundo_dado.style.animationName = '';
     	tercer_dado.style.animationName = '';
-    	segundo_dado.style.opacity = '1';
-    	tercer_dado.style.opacity = '1';
 	setTimeout(function() {
 		var tirada_2 = Math.floor((Math.random() * 6) + 1);
 		if (tirada_2 === 1) {
