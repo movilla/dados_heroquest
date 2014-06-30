@@ -5,55 +5,64 @@
   <link rel="stylesheet" href="style/main.css" media="screen">
 </head>
 <body>
-  <div class="dado_2">
-    <div id="primer_dado" class="cubo3d">
-      <div class="cara1">
-        <a class="calavera"></a>
-      </div>
-      <div class="cara2">
-        <a class="calavera"></a>
-      </div>
-      <div class="cara3">
-        <a class="escudo_negro"></a>
-      </div>
-      <div class="cara4">
-        <a class="calavera"></a>
-      </div>
-      <div class="cara5">
-	<a class="escudo_blanco"></a>
-      </div>
-      <div class="cara6">
-	<a class="escudo_blanco"></a>
-      </div>
-    </div>
+  <div id="barra_iz" class="panel_lateral_iz">
+    <table id="panel_iz" class="panel">
+      <td>
+        <a id="num_1" class="num_dados" href="index_1.html">I</a>
+        <a id="num_2" class="num_dados" href="index_2.html">II</a>
+        <a class="num_dados" href="./index_1.html">III</a>
+        <a class="num_dados" href="./index_1.html">IV</a>
+        <a class="num_dados" href="./index_1.html">V</a>
+        <a class="num_dados" href="./index_1.html">VI</a>
+        <a class="num_dados" href="./index_1.html">VII</a>
+        <a class="num_dados" href="./index_1.html">VIII</a>
+        <a class="num_dados" href="./index_1.html">IX</a>
+        <a class="num_dados" href="./index_1.html">X</a>
+      </td>
+    </table>
   </div>
-  <div class="dado_3">
-    <div id="segundo_dado" class="cubo3d">
-      <div class="cara1">
-        <a class="calavera"></a>
+  <div id="segundo_dado" class="cubo3d dado_2">
+      <div class="cara1_dos dado_2">
+        <a class="calavera_uno"></a>
       </div>
-      <div class="cara2">
-        <a class="calavera"></a>
+      <div class="cara2_dos dado_2">
+        <a class="calavera_uno"></a>
       </div>
-      <div class="cara3">
-        <a class="escudo_negro"></a>
+      <div class="cara3_dos dado_2">
+        <a class="escudo_negro_uno"></a>
       </div>
-      <div class="cara4">
-        <a class="calavera"></a>
+      <div class="cara4_dos dado_2">
+        <a class="calavera_uno"></a>
       </div>
-      <div class="cara5">
-	<a class="escudo_blanco"></a>
+      <div class="cara5_dos dado_2">
+	<a class="escudo_blanco_uno"></a>
       </div>
-      <div class="cara6">
-	<a class="escudo_blanco"></a>
+      <div class="cara6_dos dado_2">
+	<a class="escudo_blanco_uno"></a>
       </div>
-    </div>
   </div>
-  <div class="panel">
-    <button id="tirar">Tirar dados</button>
-    <a href="./index_2.html">
-      <button>Dos dados</button>
-    </a>
+  <div id="tercer_dado" class="cubo3d dado_3">
+      <div class="cara1_tres dado_3">
+        <a class="calavera_uno"></a>
+      </div>
+      <div class="cara2_tres dado_3">
+        <a class="calavera_uno"></a>
+      </div>
+      <div class="cara3_tres dado_3">
+        <a class="escudo_negro_uno"></a>
+      </div>
+      <div class="cara4_tres dado_3">
+        <a class="calavera_uno"></a>
+      </div>
+      <div class="cara5_tres dado_3">
+	<a class="escudo_blanco_uno"></a>
+      </div>
+      <div class="cara6_tres dado_3">
+	<a class="escudo_blanco_uno"></a>
+      </div>
+  </div>
+  <div class="tirador">
+    <button id="tirar_2">Tirar</button>
   </div>
 <script type="text/javascript" src="js/app.js"></script>
 </body>
