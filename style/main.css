@@ -1,11 +1,28 @@
+.panel_lateral_iz:before {
+  position: fixed;
+  width: 40px;
+  top: 0;
+  left: 0;
+  content: url('./iconos/add.svg');
+  moz-transform: scale(1);
+  display: flex;
+  margin-left: 7px;
+}
+
 .panel {
   position: fixed;
-  width: 100%;
+  width: 5%;
+  height: 100%;
   text-align: center;
   background-color: #000;
   padding: 0px;
-  top: 0;
-  left: 0;
+  top: 2%;
+  left: -70px;
+  z-index: 1;
+  animation-iteration-count: initial;
+  animation-duration: 0.3s; 
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
 
 .num_dados {
@@ -21,12 +38,16 @@
   font-size: smaller;
 }
 
-.n_dados {
-
+@keyframes animacion_panel_iz {
+  0%   { left: -70px; }
+  100% { left: 0px; }
 }
 
-a.num_dados {
+@keyframes animacion_panel_iz_no  {
+  0%   { left: 0px; }
+  100% { left: -70px; }
 }
+
 
 .tirador {
   position: absolute;
@@ -34,11 +55,74 @@ a.num_dados {
   left: 50%;
 }
 
-#tirar {
+#tirar_1, #tirar_2 {
+  position: fixed;
+  left: 50%;
+  bottom: 5%;
   margin-left: -50px;
   min-width: 100px;
   min-height: 40px;
 }
+
+#dado_uno {
+  animation-iteration-count: initial;
+  animation-duration: 1s; 
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animacion_dado_uno {
+  0%   { transform: scale(0.1); opacity: 0; }
+  100% { transform: scale(1.0); opacity: 1; }
+}
+
+@keyframes animacion_dado_uno_no {
+  0%   { transform: scale(1.0); opacity: 1; }
+  100% { transform: scale(0.1); opacity: 0; }
+}
+
+#segundo_dado {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  margin-top: -40px;
+  animation-iteration-count: initial;
+  animation-duration: 1s; 
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+#tercer_dado {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  margin-top: -40px;
+  animation-iteration-count: initial;
+  animation-duration: 1s; 
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animacion_dado_dos {
+  0%   { transform: scale(0.1); opacity: 0; }
+  100% { transform: scale(1.0); opacity: 1; }
+}
+
+@keyframes animacion_dado_dos_no {
+  0%   { transform: scale(1.0); opacity: 1; }
+  100% { transform: scale(0.1); opacity: 0; }
+}
+
+@keyframes animacion_dado_tres {
+  0%   { transform: scale(0.1); opacity: 0; }
+  100% { transform: scale(1.0); opacity: 1; }
+}
+
+@keyframes animacion_dado_tres_no {
+  0%   { transform: scale(1.0); opacity: 1; }
+  100% { transform: scale(0.1); opacity: 0; }
+}
+
 
 .dado_1 {
   position: absolute;
@@ -46,22 +130,6 @@ a.num_dados {
   left: 50%;
   margin-top: -40px;
   margin-left: -40px;
-}
-
-.dado_2 {
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  margin-top: -35px;
-  margin-left: -35px;
-}
-
-.dado_3 {
-  position: absolute;
-  top: 50%;
-  left: 75%;
-  margin-top: -35px;
-  margin-left: -35px;
 }
 
 @keyframes cubo_calavera_1 {
@@ -97,7 +165,7 @@ a.num_dados {
 .cubo3d {
   animation-timing-function: ease-in-out;
   animation-iteration-count: initial;
-  animation-duration: 1s;
+  animation-duration: 1s !important;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -moz-transform-origin: 30px 30px 0;
@@ -105,7 +173,7 @@ a.num_dados {
   animation-fill-mode: forwards;
 }
 
-.solo {
+.solo, .dado_2, .dado_3 {
   width: 80px !important;
   height: 80px !important;
   -moz-transform-origin: 40px 40px 0 !important;
@@ -121,65 +189,34 @@ a.num_dados {
   box-shadow: inset 0 0 20px rgba(0,0,0,.2);
 }
 
-.cara1_uno {
+.cara1_uno, .cara1_dos, .cara1_tres {
   -moz-transform: translateZ(40px);
   transform: translateZ(40px);
 }
 
-.cara2_uno {
+.cara2_uno, .cara2_dos, .cara2_tres {
   -moz-transform: rotateY(90deg) translateZ(40px);
   transform: rotateY(90deg) translateZ(40px);
 }
 
-.cara3_uno {
+.cara3_uno, .cara3_dos, .cara3_tres {
   -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(40px);
   transform: rotateY(90deg) rotateX(90deg) translateZ(40px);
 }
 
-.cara4_uno {
+.cara4_uno, .cara4_dos, .cara4_tres {
   -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(40px);
   transform: rotateY(180deg) rotateZ(90deg) translateZ(40px);
 }
 
-.cara5_uno {
+.cara5_uno, .cara5_dos, .cara5_tres {
   -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(40px);
   transform: rotateY(-90deg) rotateZ(90deg) translateZ(40px);
 }
 
-.cara6_uno {
+.cara6_uno, .cara6_dos, .cara6_tres {
   -moz-transform: rotateX(-90deg) translateZ(40px);
   transform: rotateX(-90deg) translateZ(40px);
-}
-
-.cubo3d .cara1 {
-  -moz-transform: translateZ(30px);
-  transform: translateZ(30px);
-}
-
-
-.cubo3d .cara2 {
-  -moz-transform: rotateY(90deg) translateZ(30px);
-  transform: rotateY(90deg) translateZ(30px);
-}
-
-.cubo3d .cara3 {
-  -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(30px);
-  transform: rotateY(90deg) rotateX(90deg) translateZ(30px);
-}
-
-.cubo3d .cara4 {
-  -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(30px);
-  transform: rotateY(180deg) rotateZ(90deg) translateZ(30px);
-}
-
-.cubo3d .cara5 {
-  -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(30px);
-  transform: rotateY(-90deg) rotateZ(90deg) translateZ(30px);
-}
-
-.cubo3d .cara6 {
-  -moz-transform: rotateX(-90deg) translateZ(30px);
-  transform: rotateX(-90deg) translateZ(30px);
 }
 
 .calavera_uno:before {
