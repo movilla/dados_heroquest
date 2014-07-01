@@ -11,43 +11,45 @@
 
 .panel_lateral_iz:before {
   position: fixed;
-  width: 40px;
-  top: 0;
+  width: 3.5rem;
+  bottom: 0;
   left: 0;
   content: url('./iconos/add.svg');
-  transform: scale(1.0);
-  moz-transform: scale(1.0);
+  -moz-transform: scale(1.0);
   display: flex;
-  margin-left: 7px;
+  z-index: 5;
 }
 
 .panel {
   position: fixed;
-  width: 5%;
+  width: 3.5rem;
   height: 100%;
   text-align: center;
-  background-color: #000;
-  padding: 0px;
-  top: 2%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
   left: -70px;
   z-index: 1;
+  padding-top: 2.5rem;
   animation-iteration-count: initial;
-  animation-duration: 0.3s; 
+  animation-duration: 0.2s; 
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
 
 .num_dados {
   margin: 5px;
-  border-radius: 5px 5px 5px 5px;
-  box-shadow: 0 1px 1px #666;
-  box-shadow: 0 1px 1px #666;
   padding: 7px 8px;
-  background-color: #FFF;
   border-top: 1px solid #000;
   display: inline-block;
-  width: 25px;
+  width: 1.5rem;
   font-size: smaller;
+  border: 1px solid #000;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #FFF;
+  box-shadow: none;
+  color: #000;
+  text-decoration: none;
 }
 
 @keyframes animacion_panel_iz {
@@ -67,7 +69,7 @@
   left: 50%;
 }
 
-#tirar_1, #tirar_2, #tirar_3 {
+#tirar_1, #tirar_2, #tirar_3, #tirar_4 {
   position: fixed;
   left: 50%;
   bottom: 5%;
@@ -121,6 +123,13 @@
 #sexto_dado {
   position: absolute;
   top: 20%;
+  left: 50%;
+  margin-left: -30px;
+}
+
+#septimo_dado {
+  position: absolute;
+  top: 50%;
   left: 50%;
   margin-left: -30px;
 }
@@ -186,7 +195,7 @@
   transform: translateZ(40px);
 }
 
-.cara1_cuatro, .cara1_quinto, .cara1_sexto {
+.cara1_cuatro, .cara1_quinto, .cara1_sexto, .cara1_septimo {
   -moz-transform: translateZ(30px);
   transform: translateZ(30px);
 }
@@ -196,7 +205,7 @@
   transform: rotateY(90deg) translateZ(40px);
 }
 
-.cara2_cuatro, .cara2_quinto, .cara2_sexto {
+.cara2_cuatro, .cara2_quinto, .cara2_sexto, .cara2_septimo {
   -moz-transform: rotateY(90deg) translateZ(30px);
   transform: rotateY(90deg) translateZ(30px);
 }
@@ -206,7 +215,7 @@
   transform: rotateY(90deg) rotateX(90deg) translateZ(40px);
 }
 
-.cara3_cuatro, .cara3_quinto, .cara3_sexto {
+.cara3_cuatro, .cara3_quinto, .cara3_sexto, .cara3_septimo {
   -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(30px);
   transform: rotateY(90deg) rotateX(90deg) translateZ(30px);
 }
@@ -216,7 +225,7 @@
   transform: rotateY(180deg) rotateZ(90deg) translateZ(40px);
 }
 
-.cara4_cuatro, .cara4_quinto, .cara4_sexto {
+.cara4_cuatro, .cara4_quinto, .cara4_sexto, .cara4_septimo {
   -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(30px);
   transform: rotateY(180deg) rotateZ(90deg) translateZ(30px);
 }
@@ -226,7 +235,7 @@
   transform: rotateY(-90deg) rotateZ(90deg) translateZ(40px);
 }
 
-.cara5_cuatro, .cara5_quinto, .cara5_sexto {
+.cara5_cuatro, .cara5_quinto, .cara5_sexto, .cara5_septimo {
   -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(30px);
   transform: rotateY(-90deg) rotateZ(90deg) translateZ(30px);
 }
@@ -236,7 +245,7 @@
   transform: rotateX(-90deg) translateZ(40px);
 }
 
-.cara6_cuatro, .cara6_quinto, .cara6_sexto {
+.cara6_cuatro, .cara6_quinto, .cara6_sexto, .cara6_septimo {
   -moz-transform: rotateX(-90deg) translateZ(30px);
   transform: rotateX(-90deg) translateZ(30px);
 }
