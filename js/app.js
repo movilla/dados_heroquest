@@ -241,6 +241,119 @@ document.querySelector('#tirar_4').onclick = function () {
 };
 }
 
+var tirar_5 = document.getElementById('tirar_5');
+if (tirar_5) {
+	document.querySelector('#tirar_5').onclick = function () {
+	var cuarto_dado = document.getElementById('cuarto_dado');
+	var quinto_dado = document.getElementById('quinto_dado');
+	var septimo_dado = document.getElementById('septimo_dado');
+	var octavo_dado = document.getElementById('octavo_dado');
+	var noveno_dado = document.getElementById('noveno_dado');
+    	cuarto_dado.style.animationName = '';
+    	quinto_dado.style.animationName = '';
+    	septimo_dado.style.animationName = '';
+    	octavo_dado.style.animationName = '';
+    	noveno_dado.style.animationName = '';
+	setTimeout(function() {
+		var tirada_4 = Math.floor((Math.random() * 6) + 1);
+		if (tirada_4 === 1) {
+			document.getElementById('cuarto_dado').style.animationName = 'cubo_calavera_1';
+		}
+    		if (tirada_4 === 2) {
+			document.getElementById('cuarto_dado').style.animationName = 'cubo_escudo_negro_2';
+		}
+    		if (tirada_4 === 3) {
+      			document.getElementById('cuarto_dado').style.animationName = 'cubo_calavera_3';
+    		}
+    		if (tirada_4 === 4) {
+     			document.getElementById('cuarto_dado').style.animationName = 'cubo_calavera_4';
+    		}
+    		if (tirada_4 === 5) {
+      			document.getElementById('cuarto_dado').style.animationName = 'cubo_escudo_blanco_5';
+    		}
+    		if (tirada_4 === 6) {
+      			document.getElementById('cuarto_dado').style.animationName = 'cubo_escudo_blanco_6';
+    		}
+                var tirada_5 = Math.floor((Math.random() * 6) + 1);
+		if (tirada_5 === 1) {
+			document.getElementById('quinto_dado').style.animationName = 'cubo_calavera_1';
+		}
+    		if (tirada_5 === 2) {
+			document.getElementById('quinto_dado').style.animationName = 'cubo_escudo_negro_2';
+		}
+    		if (tirada_5 === 3) {
+      			document.getElementById('quinto_dado').style.animationName = 'cubo_calavera_3';
+    		}
+    		if (tirada_5 === 4) {
+     			document.getElementById('quinto_dado').style.animationName = 'cubo_calavera_4';
+    		}
+    		if (tirada_5 === 5) {
+      			document.getElementById('quinto_dado').style.animationName = 'cubo_escudo_blanco_5';
+    		}
+    		if (tirada_5 === 6) {
+      			document.getElementById('quinto_dado').style.animationName = 'cubo_escudo_blanco_6';
+    		}
+                var tirada_7 = Math.floor((Math.random() * 6) + 1);
+		if (tirada_7 === 1) {
+			document.getElementById('septimo_dado').style.animationName = 'cubo_calavera_1';
+		}
+    		if (tirada_7 === 2) {
+			document.getElementById('septimo_dado').style.animationName = 'cubo_escudo_negro_2';
+		}
+    		if (tirada_7 === 3) {
+      			document.getElementById('septimo_dado').style.animationName = 'cubo_calavera_3';
+    		}
+    		if (tirada_7 === 4) {
+     			document.getElementById('septimo_dado').style.animationName = 'cubo_calavera_4';
+    		}
+    		if (tirada_7 === 5) {
+      			document.getElementById('septimo_dado').style.animationName = 'cubo_escudo_blanco_5';
+    		}
+    		if (tirada_7 === 6) {
+      			document.getElementById('septimo_dado').style.animationName = 'cubo_escudo_blanco_6';
+    		}
+     		var tirada_8 = Math.floor((Math.random() * 6) + 1);
+		if (tirada_8 === 1) {
+			document.getElementById('octavo_dado').style.animationName = 'cubo_calavera_1';
+		}
+    		if (tirada_8 === 2) {
+			document.getElementById('octavo_dado').style.animationName = 'cubo_escudo_negro_2';
+		}
+    		if (tirada_8 === 3) {
+      			document.getElementById('octavo_dado').style.animationName = 'cubo_calavera_3';
+    		}
+    		if (tirada_8 === 4) {
+     			document.getElementById('octavo_dado').style.animationName = 'cubo_calavera_4';
+    		}
+    		if (tirada_8 === 5) {
+      			document.getElementById('octavo_dado').style.animationName = 'cubo_escudo_blanco_5';
+    		}
+    		if (tirada_8 === 6) {
+      			document.getElementById('octavo_dado').style.animationName = 'cubo_escudo_blanco_6';
+    		}
+     		var tirada_9 = Math.floor((Math.random() * 6) + 1);
+		if (tirada_9 === 1) {
+			document.getElementById('noveno_dado').style.animationName = 'cubo_calavera_1';
+		}
+    		if (tirada_9 === 2) {
+			document.getElementById('noveno_dado').style.animationName = 'cubo_escudo_negro_2';
+		}
+    		if (tirada_9 === 3) {
+      			document.getElementById('noveno_dado').style.animationName = 'cubo_calavera_3';
+    		}
+    		if (tirada_9 === 4) {
+     			document.getElementById('noveno_dado').style.animationName = 'cubo_calavera_4';
+    		}
+    		if (tirada_9 === 5) {
+      			document.getElementById('noveno_dado').style.animationName = 'cubo_escudo_blanco_5';
+    		}
+    		if (tirada_9 === 6) {
+      			document.getElementById('noveno_dado').style.animationName = 'cubo_escudo_blanco_6';
+    		}
+  	}, 30);
+};
+}
+
 document.querySelector('#barra_iz').onclick = function () {
   var panel_iz = document.getElementById('panel_iz');
   if (panel_iz.className === 'panel mostrar') {
