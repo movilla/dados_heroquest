@@ -1,3 +1,13 @@
+@font-face {
+  font-family:'FiraSans';
+  src: url('/style/fonts/FiraSans-Light.ttf');
+  font-weight: 100;
+}
+
+* {
+  font-family: FiraSans, Open Sans, sans-serif;
+}
+
 #background {
   position:fixed;
   width:100%;
@@ -68,7 +78,7 @@
   left: 50%;
 }
 
-#tirar_1, #tirar_2, #tirar_3, #tirar_4 {
+#tirar_1, #tirar_2, #tirar_3, #tirar_4, #tirar_5 {
   position: fixed;
   left: 50%;
   bottom: 5%;
@@ -133,6 +143,19 @@
   margin-left: -30px;
 }
 
+#octavo_dado {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+#noveno_dado {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  margin-right: 60px;
+}
+
 @keyframes cubo_calavera_1 {
   0% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
   100% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(0deg) rotateY(360deg) rotateZ(360deg); }
@@ -194,7 +217,7 @@
   transform: translateZ(40px);
 }
 
-.cara1_cuatro, .cara1_quinto, .cara1_sexto, .cara1_septimo {
+.cara1_cuatro, .cara1_quinto, .cara1_sexto, .cara1_septimo, .cara1_octavo, .cara1_noveno {
   -moz-transform: translateZ(30px);
   transform: translateZ(30px);
 }
@@ -204,7 +227,7 @@
   transform: rotateY(90deg) translateZ(40px);
 }
 
-.cara2_cuatro, .cara2_quinto, .cara2_sexto, .cara2_septimo {
+.cara2_cuatro, .cara2_quinto, .cara2_sexto, .cara2_septimo, .cara2_octavo, .cara2_noveno {
   -moz-transform: rotateY(90deg) translateZ(30px);
   transform: rotateY(90deg) translateZ(30px);
 }
@@ -214,7 +237,7 @@
   transform: rotateY(90deg) rotateX(90deg) translateZ(40px);
 }
 
-.cara3_cuatro, .cara3_quinto, .cara3_sexto, .cara3_septimo {
+.cara3_cuatro, .cara3_quinto, .cara3_sexto, .cara3_septimo, .cara3_octavo, .cara3_noveno {
   -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(30px);
   transform: rotateY(90deg) rotateX(90deg) translateZ(30px);
 }
@@ -224,7 +247,7 @@
   transform: rotateY(180deg) rotateZ(90deg) translateZ(40px);
 }
 
-.cara4_cuatro, .cara4_quinto, .cara4_sexto, .cara4_septimo {
+.cara4_cuatro, .cara4_quinto, .cara4_sexto, .cara4_septimo, .cara4_octavo, .cara4_noveno {
   -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(30px);
   transform: rotateY(180deg) rotateZ(90deg) translateZ(30px);
 }
@@ -234,7 +257,7 @@
   transform: rotateY(-90deg) rotateZ(90deg) translateZ(40px);
 }
 
-.cara5_cuatro, .cara5_quinto, .cara5_sexto, .cara5_septimo {
+.cara5_cuatro, .cara5_quinto, .cara5_sexto, .cara5_septimo, .cara5_octavo, .cara5_noveno {
   -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(30px);
   transform: rotateY(-90deg) rotateZ(90deg) translateZ(30px);
 }
@@ -244,7 +267,7 @@
   transform: rotateX(-90deg) translateZ(40px);
 }
 
-.cara6_cuatro, .cara6_quinto, .cara6_sexto, .cara6_septimo {
+.cara6_cuatro, .cara6_quinto, .cara6_sexto, .cara6_septimo, .cara6_octavo, .cara6_noveno {
   -moz-transform: rotateX(-90deg) translateZ(30px);
   transform: rotateX(-90deg) translateZ(30px);
 }
