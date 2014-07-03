@@ -71,14 +71,13 @@
   100% { left: -70px; }
 }
 
-
 .tirador {
   position: absolute;
   bottom: 5%;
   left: 50%;
 }
 
-#tirar_1, #tirar_2, #tirar_3, #tirar_4, #tirar_5, #tirar_6 {
+.tirar {
   position: fixed;
   left: 50%;
   bottom: 5%;
@@ -94,7 +93,7 @@
   cursor: pointer;
 }
 
-#dado_uno {
+.centro {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -102,101 +101,96 @@
   margin-left: -40px;
 }
 
-#segundo_dado {
+.cen_lat_dcho {
   position: absolute;
   top: 50%;
   left: 10%;
   margin-top: -40px;
 }
 
-#tercer_dado {
+.cen_lat_dchom {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  margin-left: -60px;
+}
+
+.cen_lat_izq {
   position: absolute;
   top: 50%;
   right: 10%;
   margin-top: -40px;
 }
 
-#cuarto_dado {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-}
-
-#quinto_dado {
+.cen_lat_izqm {
   position: absolute;
   top: 50%;
   right: 10%;
-  margin-right: 60px;
 }
 
-#sexto_dado {
+
+.cen_arriba {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
-  margin-left: -30px;
+  margin-left: -40px;
 }
 
-#septimo_dado {
+.cen_arr_dcho {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -30px;
-}
-
-#octavo_dado {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-}
-
-#noveno_dado {
-  position: absolute;
-  top: 20%;
+  top: 10%;
   right: 10%;
-  margin-right: 60px;
+  margin-left: -40px;
 }
 
-#decimo_dado {
+.cen_arr_izq {
   position: absolute;
-  top: 20%;
-  right: 50%;
-  margin-right: 30px;
+  top: 10%;
+  left: 10%;
+  margin-left: -40px;
 }
 
-@keyframes cubo_calavera_1 {
+.cen_arr_izqm {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  margin-left: -60px;
+}
+
+@keyframes uno {
   0% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
   100% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(0deg) rotateY(360deg) rotateZ(360deg); }
 }
 
-@keyframes cubo_calavera_3 {
+@keyframes dos {
+  0% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(0deg) rotateY(270deg) rotateZ(360deg); }
+}
+
+@keyframes tres {
   0% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
   100% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(360deg) rotateY(-90deg) rotateZ(-270deg); }
 }
 
-@keyframes cubo_calavera_4 {
+@keyframes cuatro {
   0% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
   100% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(180deg) rotateY(360deg) rotateZ(270deg); }
 }
 
-@keyframes cubo_escudo_blanco_5 {
+@keyframes quinco {
   0% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
   100% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(270deg) rotateY(180deg) rotateZ(90deg); }
 }
 
-@keyframes cubo_escudo_blanco_6 {
+@keyframes seis {
   0% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
   100% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(90deg) rotateY(-360deg) rotateZ(360deg); }
-}
-
-@keyframes cubo_escudo_negro_2 {
-  0% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
-  100% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(0deg) rotateY(270deg) rotateZ(360deg); }
 }
 
 .cubo3d {
   animation-timing-function: ease-in-out;
   animation-iteration-count: initial;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -moz-transform-origin: 30px 30px 0;
@@ -204,7 +198,7 @@
   animation-fill-mode: forwards;
 }
 
-.solo, .dado_2, .dado_3 {
+.solo {
   width: 80px !important;
   height: 80px !important;
   -moz-transform-origin: 40px 40px 0 !important;
@@ -219,62 +213,62 @@
   background: #fff;
 }
 
-.cara1_uno, .cara1_dos, .cara1_tres {
+.cara1_uno {
   -moz-transform: translateZ(40px);
   transform: translateZ(40px);
 }
 
-.cara1_cuatro, .cara1_quinto, .cara1_sexto, .cara1_septimo, .cara1_octavo, .cara1_noveno, .cara1_decimo {
+.cara1_cuatro {
   -moz-transform: translateZ(30px);
   transform: translateZ(30px);
 }
 
-.cara2_uno, .cara2_dos, .cara2_tres {
+.cara2_uno {
   -moz-transform: rotateY(90deg) translateZ(40px);
   transform: rotateY(90deg) translateZ(40px);
 }
 
-.cara2_cuatro, .cara2_quinto, .cara2_sexto, .cara2_septimo, .cara2_octavo, .cara2_noveno, .cara2_decimo {
+.cara2_cuatro {
   -moz-transform: rotateY(90deg) translateZ(30px);
   transform: rotateY(90deg) translateZ(30px);
 }
 
-.cara3_uno, .cara3_dos, .cara3_tres {
+.cara3_uno {
   -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(40px);
   transform: rotateY(90deg) rotateX(90deg) translateZ(40px);
 }
 
-.cara3_cuatro, .cara3_quinto, .cara3_sexto, .cara3_septimo, .cara3_octavo, .cara3_noveno, .cara3_decimo {
+.cara3_cuatro {
   -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(30px);
   transform: rotateY(90deg) rotateX(90deg) translateZ(30px);
 }
 
-.cara4_uno, .cara4_dos, .cara4_tres {
+.cara4_uno {
   -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(40px);
   transform: rotateY(180deg) rotateZ(90deg) translateZ(40px);
 }
 
-.cara4_cuatro, .cara4_quinto, .cara4_sexto, .cara4_septimo, .cara4_octavo, .cara4_noveno, .cara4_decimo {
+.cara4_cuatro {
   -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(30px);
   transform: rotateY(180deg) rotateZ(90deg) translateZ(30px);
 }
 
-.cara5_uno, .cara5_dos, .cara5_tres {
+.cara5_uno {
   -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(40px);
   transform: rotateY(-90deg) rotateZ(90deg) translateZ(40px);
 }
 
-.cara5_cuatro, .cara5_quinto, .cara5_sexto, .cara5_septimo, .cara5_octavo, .cara5_noveno, .cara5_decimo {
+.cara5_cuatro {
   -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(30px);
   transform: rotateY(-90deg) rotateZ(90deg) translateZ(30px);
 }
 
-.cara6_uno, .cara6_dos, .cara6_tres {
+.cara6_uno {
   -moz-transform: rotateX(-90deg) translateZ(40px);
   transform: rotateX(-90deg) translateZ(40px);
 }
 
-.cara6_cuatro, .cara6_quinto, .cara6_sexto, .cara6_septimo, .cara6_octavo, .cara6_noveno, .cara6_decimo {
+.cara6_cuatro {
   -moz-transform: rotateX(-90deg) translateZ(30px);
   transform: rotateX(-90deg) translateZ(30px);
 }
