@@ -1,3 +1,6 @@
+var nav = document.getElementById('barra_iz');
+nav.innerHTML = '<nav id="panel_iz" class="panel"><a id="num_1" class="num_dados" href="index_1.html">I</a><a id="num_2" class="num_dados" href="index_2.html">II</a><a id="num_3" class="num_dados" href="index_3.html">III</a><a id="num_4" class="num_dados" href="index_4.html">IV</a><a id="num_5" class="num_dados" href="index_5.html">V</a><a id="num_6" class="num_dados" href="index_6.html">VI</a><a id="num_7" class="num_dados" href="index_7.html">VII</a><a id="num_8" class="num_dados" href="index_8.html">VIII</a><a id="num_9" class="num_dados" href="index_9.html">IX</a><a id="num_10" class="num_dados" href="index_10.html">X</a></nav>';
+
 
 var tirar_1 = document.getElementById('tirar_1');
 if (tirar_1) {
