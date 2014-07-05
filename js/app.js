@@ -25,6 +25,9 @@ if (d4m) { d4m.innerHTML = '<div id="cuarto_dado" class="cubo3d"><div class="car
 var d5m = document.getElementById('dado_quinto mediano');
 if (d5m) { d5m.innerHTML = '<div id="quinto_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
 
+var d6m = document.getElementById('dado_sexto mediano');
+if (d6m) { d6m.innerHTML = '<div id="sexto_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+
 
 document.querySelector('#tirar').onclick = function () {
 	var primer_dado = document.getElementById('primer_dado');
@@ -32,7 +35,7 @@ document.querySelector('#tirar').onclick = function () {
 	var tercero_dado = document.getElementById('tercero_dado');
 	var cuarto_dado = document.getElementById('cuarto_dado');
 	var quinto_dado = document.getElementById('quinto_dado');
-	var seis_dado = document.getElementById('seis_dado');
+	var sexto_dado = document.getElementById('sexto_dado');
 	var septimo_dado = document.getElementById('septimo_dado');
 	var octavo_dado = document.getElementById('octavo_dado');
 	var noveno_dado = document.getElementById('noveno_dado');
@@ -42,7 +45,7 @@ document.querySelector('#tirar').onclick = function () {
     	if (tercero_dado) { tercero_dado.style.animationName = ''; }
     	if (cuarto_dado) { cuarto_dado.style.animationName = ''; }
     	if (quinto_dado) { quinto_dado.style.animationName = ''; }
-    	if (seis_dado) { seis_dado.style.animationName = ''; }
+    	if (sexto_dado) { sexto_dado.style.animationName = ''; }
     	if (septimo_dado) { septimo_dado.style.animationName = ''; }
     	if (octavo_dado) { octavo_dado.style.animationName = ''; }
     	if (noveno_dado) { noveno_dado.style.animationName = ''; }
@@ -153,25 +156,25 @@ document.querySelector('#tirar').onclick = function () {
       				document.getElementById('quinto_dado').style.animationName = 'seis';
     			}
 		}
-		if (seis_dado) {
+		if (sexto_dado) {
 	      		var tirada_6 = Math.floor((Math.random() * 6) + 1);
 			if (tirada_6 === 1) {
-				document.getElementById('seis_dado').style.animationName = 'uno';
+				document.getElementById('sexto_dado').style.animationName = 'uno';
 			}
 	    		if (tirada_6 === 2) {
-				document.getElementById('seis_dado').style.animationName = 'dos';
+				document.getElementById('sexto_dado').style.animationName = 'dos';
 			}
 	    		if (tirada_6 === 3) {
-	      			document.getElementById('seis_dado').style.animationName = 'tres';
+	      			document.getElementById('sexto_dado').style.animationName = 'tres';
 	    		}
 	    		if (tirada_6 === 4) {
-	     			document.getElementById('seis_dado').style.animationName = 'cuatro';
+	     			document.getElementById('sexto_dado').style.animationName = 'cuatro';
 	    		}
 	    		if (tirada_6 === 5) {
-	      			document.getElementById('seis_dado').style.animationName = 'cinco';
+	      			document.getElementById('sexto_dado').style.animationName = 'cinco';
 	    		}
 	    		if (tirada_6 === 6) {
-	      			document.getElementById('seis_dado').style.animationName = 'seis';
+	      			document.getElementById('sexto_dado').style.animationName = 'seis';
 	    		}
 		}
 		if (septimo_dado) {

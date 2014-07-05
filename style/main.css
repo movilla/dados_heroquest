@@ -135,12 +135,25 @@
   right: 10%;
 }
 
-
 .cen_arriba {
   position: absolute;
   top: 10%;
   left: 50%;
   margin-left: -40px;
+}
+
+.cen_arribam {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-left: -30px;
+}
+
+.cen_abajom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -30px;
 }
 
 .cen_arr_dcho {
