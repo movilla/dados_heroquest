@@ -119,7 +119,6 @@
   position: absolute;
   top: 50%;
   left: 10%;
-  margin-left: -60px;
 }
 
 .cen_lat_izq {
@@ -132,7 +131,7 @@
 .cen_lat_izqm {
   position: absolute;
   top: 50%;
-  right: 10%;
+  right: 30%;
 }
 
 .cen_arriba {
@@ -163,6 +162,12 @@
   margin-left: -40px;
 }
 
+.cen_arr_dchom {
+  position: absolute;
+  top: 10%;
+  right: 30%;
+}
+
 .cen_arr_izq {
   position: absolute;
   top: 10%;
@@ -174,7 +179,6 @@
   position: absolute;
   top: 10%;
   left: 10%;
-  margin-left: -60px;
 }
 
 @keyframes uno {
