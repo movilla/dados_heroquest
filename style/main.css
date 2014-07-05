@@ -39,6 +39,8 @@
   top: 0;
   left: -70px;
   z-index: 1;
+  overflow-x: scroll;
+  overflow-y: hidden;
   animation-iteration-count: initial;
   animation-duration: 0.2s; 
   animation-fill-mode: forwards;
@@ -46,7 +48,7 @@
 }
 
 .num_dados {
-  margin: 5px;
+  margin-top: 3px;
   padding: 7px 8px;
   border-top: 1px solid #000;
   display: inline-block;
