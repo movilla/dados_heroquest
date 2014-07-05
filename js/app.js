@@ -38,7 +38,7 @@ var d9m = document.getElementById('dado_noveno mediano');
 if (d9m) { d9m.innerHTML = '<div id="noveno_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
 
 var d10m = document.getElementById('dado_decimo mediano');
-if (d10m) { d8m.innerHTML = '<div id="decimo_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+if (d10m) { d10m.innerHTML = '<div id="decimo_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
 
 
 document.querySelector('#tirar').onclick = function () {
