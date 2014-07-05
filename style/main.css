@@ -101,6 +101,13 @@
   margin-left: -40px;
 }
 
+.centrom {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -30px;
+}
+
 .cen_lat_dcho {
   position: absolute;
   top: 50%;
@@ -177,7 +184,7 @@
   100% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(180deg) rotateY(360deg) rotateZ(270deg); }
 }
 
-@keyframes quinco {
+@keyframes cinco {
   0% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
   100% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(270deg) rotateY(180deg) rotateZ(90deg); }
 }
