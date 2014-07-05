@@ -22,13 +22,16 @@ if (d3m) { d3m.innerHTML = '<div id="tercero_dado" class="cubo3d"><div class="ca
 var d4m = document.getElementById('dado_cuatro mediano');
 if (d4m) { d4m.innerHTML = '<div id="cuarto_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
 
+var d5m = document.getElementById('dado_quinto mediano');
+if (d5m) { d5m.innerHTML = '<div id="quinto_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+
 
 document.querySelector('#tirar').onclick = function () {
 	var primer_dado = document.getElementById('primer_dado');
 	var segundo_dado = document.getElementById('segundo_dado');
 	var tercero_dado = document.getElementById('tercero_dado');
 	var cuarto_dado = document.getElementById('cuarto_dado');
-	var quinco_dado = document.getElementById('quinco_dado');
+	var quinto_dado = document.getElementById('quinto_dado');
 	var seis_dado = document.getElementById('seis_dado');
 	var septimo_dado = document.getElementById('septimo_dado');
 	var octavo_dado = document.getElementById('octavo_dado');
@@ -38,7 +41,7 @@ document.querySelector('#tirar').onclick = function () {
     	if (segundo_dado) { segundo_dado.style.animationName = ''; }
     	if (tercero_dado) { tercero_dado.style.animationName = ''; }
     	if (cuarto_dado) { cuarto_dado.style.animationName = ''; }
-    	if (quinco_dado) { quinco_dado.style.animationName = ''; }
+    	if (quinto_dado) { quinto_dado.style.animationName = ''; }
     	if (seis_dado) { seis_dado.style.animationName = ''; }
     	if (septimo_dado) { septimo_dado.style.animationName = ''; }
     	if (octavo_dado) { octavo_dado.style.animationName = ''; }
@@ -60,7 +63,7 @@ document.querySelector('#tirar').onclick = function () {
      				document.getElementById('primer_dado').style.animationName = 'cuatro';
     			}
     			if (tirada === 5) {
-      				document.getElementById('primer_dado').style.animationName = 'quinco';
+      				document.getElementById('primer_dado').style.animationName = 'cinco';
     			}
     			if (tirada === 6) {
       				document.getElementById('primer_dado').style.animationName = 'seis';
@@ -81,7 +84,7 @@ document.querySelector('#tirar').onclick = function () {
      				document.getElementById('segundo_dado').style.animationName = 'cuatro';
     			}
     			if (tirada_2 === 5) {
-      				document.getElementById('segundo_dado').style.animationName = 'quinco';
+      				document.getElementById('segundo_dado').style.animationName = 'cinco';
     			}
     			if (tirada_2 === 6) {
       				document.getElementById('segundo_dado').style.animationName = 'seis';
@@ -102,7 +105,7 @@ document.querySelector('#tirar').onclick = function () {
      				document.getElementById('tercero_dado').style.animationName = 'cuatro';
     			}
     			if (tirada_3 === 5) {
-      				document.getElementById('tercero_dado').style.animationName = 'quinco';
+      				document.getElementById('tercero_dado').style.animationName = 'cinco';
     			}
     			if (tirada_3 === 6) {
       				document.getElementById('tercero_dado').style.animationName = 'seis';
@@ -123,31 +126,31 @@ document.querySelector('#tirar').onclick = function () {
      				document.getElementById('cuarto_dado').style.animationName = 'cuatro';
     			}
     			if (tirada_4 === 5) {
-      				document.getElementById('cuarto_dado').style.animationName = 'quinco';
+      				document.getElementById('cuarto_dado').style.animationName = 'cinco';
     			}
     			if (tirada_4 === 6) {
       				document.getElementById('cuarto_dado').style.animationName = 'seis';
     			}
 		}
-		if (quinco_dado) {
+		if (quinto_dado) {
         	        var tirada_5 = Math.floor((Math.random() * 6) + 1);
 			if (tirada_5 === 1) {
-				document.getElementById('quinco_dado').style.animationName = 'uno';
+				document.getElementById('quinto_dado').style.animationName = 'uno';
 			}
     			if (tirada_5 === 2) {
-				document.getElementById('quinco_dado').style.animationName = 'dos';
+				document.getElementById('quinto_dado').style.animationName = 'dos';
 			}
     			if (tirada_5 === 3) {
-      				document.getElementById('quinco_dado').style.animationName = 'tres';
+      				document.getElementById('quinto_dado').style.animationName = 'tres';
     			}
     			if (tirada_5 === 4) {
-     				document.getElementById('quinco_dado').style.animationName = 'cuatro';
+     				document.getElementById('quinto_dado').style.animationName = 'cuatro';
     			}
     			if (tirada_5 === 5) {
-      				document.getElementById('quinco_dado').style.animationName = 'quinco';
+      				document.getElementById('quinto_dado').style.animationName = 'cinco';
     			}
     			if (tirada_5 === 6) {
-      				document.getElementById('quinco_dado').style.animationName = 'seis';
+      				document.getElementById('quinto_dado').style.animationName = 'seis';
     			}
 		}
 		if (seis_dado) {
@@ -165,7 +168,7 @@ document.querySelector('#tirar').onclick = function () {
 	     			document.getElementById('seis_dado').style.animationName = 'cuatro';
 	    		}
 	    		if (tirada_6 === 5) {
-	      			document.getElementById('seis_dado').style.animationName = 'quinco';
+	      			document.getElementById('seis_dado').style.animationName = 'cinco';
 	    		}
 	    		if (tirada_6 === 6) {
 	      			document.getElementById('seis_dado').style.animationName = 'seis';
@@ -186,7 +189,7 @@ document.querySelector('#tirar').onclick = function () {
 	     			document.getElementById('septimo_dado').style.animationName = 'cuatro';
 	    		}
 	    		if (tirada_7 === 5) {
-	      			document.getElementById('septimo_dado').style.animationName = 'quinco';
+	      			document.getElementById('septimo_dado').style.animationName = 'cinco';
 	    		}
 	    		if (tirada_7 === 6) {
 	      			document.getElementById('septimo_dado').style.animationName = 'seis';
