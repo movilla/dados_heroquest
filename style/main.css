@@ -204,6 +204,13 @@
   left: 10%;
 }
 
+.abajo_centrom {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  margin-left: -30px;
+}
+
 @keyframes uno {
   0% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
   100% { transform: translate3d(0px,0px,0px) translateZ(0px) rotateX(0deg) rotateY(360deg) rotateZ(360deg); }
