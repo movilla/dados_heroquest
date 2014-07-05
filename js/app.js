@@ -28,6 +28,9 @@ if (d5m) { d5m.innerHTML = '<div id="quinto_dado" class="cubo3d"><div class="car
 var d6m = document.getElementById('dado_sexto mediano');
 if (d6m) { d6m.innerHTML = '<div id="sexto_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
 
+var d7m = document.getElementById('dado_septimo mediano');
+if (d7m) { d7m.innerHTML = '<div id="septimo_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+
 
 document.querySelector('#tirar').onclick = function () {
 	var primer_dado = document.getElementById('primer_dado');
