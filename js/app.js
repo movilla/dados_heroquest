@@ -31,6 +31,15 @@ if (d6m) { d6m.innerHTML = '<div id="sexto_dado" class="cubo3d"><div class="cara
 var d7m = document.getElementById('dado_septimo mediano');
 if (d7m) { d7m.innerHTML = '<div id="septimo_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
 
+var d8m = document.getElementById('dado_octavo mediano');
+if (d8m) { d8m.innerHTML = '<div id="octavo_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+
+var d9m = document.getElementById('dado_noveno mediano');
+if (d9m) { d9m.innerHTML = '<div id="noveno_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+
+var d10m = document.getElementById('dado_decimo mediano');
+if (d10m) { d8m.innerHTML = '<div id="decimo_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+
 
 document.querySelector('#tirar').onclick = function () {
 	var primer_dado = document.getElementById('primer_dado');
@@ -201,7 +210,69 @@ document.querySelector('#tirar').onclick = function () {
 	      			document.getElementById('septimo_dado').style.animationName = 'seis';
 	    		}
 		}
-
+		if (octavo_dado) {
+			var tirada_8 = Math.floor((Math.random() * 6) + 1);
+			if (tirada_8 === 1) {
+				document.getElementById('octavo_dado').style.animationName = 'uno';
+			}
+	    		if (tirada_8 === 2) {
+				document.getElementById('octavo_dado').style.animationName = 'dos';
+			}
+	    		if (tirada_8 === 3) {
+	      			document.getElementById('octavo_dado').style.animationName = 'tres';
+	    		}
+	    		if (tirada_8 === 4) {
+	     			document.getElementById('octavo_dado').style.animationName = 'cuatro';
+	    		}
+	    		if (tirada_8 === 5) {
+	      			document.getElementById('octavo_dado').style.animationName = 'cinco';
+	    		}
+	    		if (tirada_8 === 6) {
+	      			document.getElementById('octavo_dado').style.animationName = 'seis';
+	    		}
+		}
+		if (noveno_dado) {
+			var tirada_9 = Math.floor((Math.random() * 6) + 1);
+			if (tirada_9 === 1) {
+				document.getElementById('noveno_dado').style.animationName = 'uno';
+			}
+	    		if (tirada_9 === 2) {
+				document.getElementById('noveno_dado').style.animationName = 'dos';
+			}
+	    		if (tirada_9 === 3) {
+	      			document.getElementById('noveno_dado').style.animationName = 'tres';
+	    		}
+	    		if (tirada_9 === 4) {
+	     			document.getElementById('noveno_dado').style.animationName = 'cuatro';
+	    		}
+	    		if (tirada_9 === 5) {
+	      			document.getElementById('noveno_dado').style.animationName = 'cinco';
+	    		}
+	    		if (tirada_9 === 6) {
+	      			document.getElementById('noveno_dado').style.animationName = 'seis';
+	    		}
+		}
+		if (decimo_dado) {
+			var tirada_10 = Math.floor((Math.random() * 6) + 1);
+			if (tirada_10 === 1) {
+				document.getElementById('decimo_dado').style.animationName = 'uno';
+			}
+	    		if (tirada_10 === 2) {
+				document.getElementById('decimo_dado').style.animationName = 'dos';
+			}
+	    		if (tirada_10 === 3) {
+	      			document.getElementById('decimo_dado').style.animationName = 'tres';
+	    		}
+	    		if (tirada_10 === 4) {
+	     			document.getElementById('decimo_dado').style.animationName = 'cuatro';
+	    		}
+	    		if (tirada_10 === 5) {
+	      			document.getElementById('decimo_dado').style.animationName = 'cinco';
+	    		}
+	    		if (tirada_10 === 6) {
+	      			document.getElementById('decimo_dado').style.animationName = 'seis';
+	    		}
+		}
   	}, 30);
 };
 
