@@ -42,6 +42,8 @@ if (d10m) { d10m.innerHTML = '<div id="decimo_dado" class="cubo3d"><div class="c
 
 
 document.querySelector('#tirar').onclick = function () {
+	var tirar = document.getElementById('tirada');
+        var time = tirar.getAttribute('data-time');
 	var primer_dado = document.getElementById('primer_dado');
 	var segundo_dado = document.getElementById('segundo_dado');
 	var tercero_dado = document.getElementById('tercero_dado');
@@ -63,6 +65,18 @@ document.querySelector('#tirar').onclick = function () {
     	if (noveno_dado) { noveno_dado.style.animationName = ''; }
     	if (decimo_dado) { decimo_dado.style.animationName = ''; }
 	setTimeout(function() {
+		if (time) {
+			if (primer_dado) { primer_dado.style.animationDuration = time; }
+			if (segundo_dado) { segundo_dado.style.animationDuration = time; }
+			if (tercero_dado) { tercero_dado.style.animationDuration = time; }
+			if (cuarto_dado) { cuarto_dado.style.animationDuration = time; }
+			if (quinto_dado) { quinto_dado.style.animationDuration = time; }
+			if (sexto_dado) { sexto_dado.style.animationDuration = time; }
+			if (septimo_dado) { septimo_dado.style.animationDuration = time; }
+			if (octavo_dado) { octavo_dado.style.animationDuration = time; }
+			if (noveno_dado) { noveno_dado.style.animationDuration = time; }
+			if (decimo_dado) { decimo_dado.style.animationDuration = time; }
+		}
 		if (primer_dado) {
 			var tirada = Math.floor((Math.random() * 6) + 1);
 			if (tirada === 1) {
