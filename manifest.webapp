@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "launch_path": "/index_1.html",
   "icons": {
-    "60": "/img/icono_60.png"
-    "90": "/img/icono_90.png"
+    "60": "/img/icono_60.png",
+    "90": "/img/icono_90.png",
     "128": "/img/icono_128.png"
   },
   "developer": {
