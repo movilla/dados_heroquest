@@ -1,4 +1,4 @@
-dado_heroquest
+Dados HQ
 ==============
 
-Aplicación que permite simular una tirada de dados en Heroquest
+Aplicación que permite simular una tirada de dados para el juego de mesa Heroquest.
