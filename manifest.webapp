@@ -1,7 +1,7 @@
 {
   "name": "Dados HQ",
   "description": "Aplicación que permite simular una tirada de dados para el juego de mesa Heroquest",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "launch_path": "/index_1.html",
   "icons": {
     "60": "/img/icono_60.png",
