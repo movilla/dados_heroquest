@@ -30,6 +30,17 @@
   z-index: 5;
 }
 
+.panel_lateral_dch:before {
+  position: fixed;
+  width: 3.5rem;
+  bottom: 0;
+  right: 0;
+  content: url('./iconos/add.svg');
+  -moz-transform: scale(1.0);
+  display: flex;
+  z-index: 5;
+}
+
 .panel {
   position: fixed;
   width: 3.5rem;
@@ -38,6 +49,23 @@
   background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   left: -5rem;
+  z-index: 1;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  animation-iteration-count: initial;
+  animation-duration: 0.2s; 
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.panel_dch {
+  position: fixed;
+  width: 3.5rem;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: -5rem;
   z-index: 1;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -63,8 +91,30 @@
   text-decoration: none;
 }
 
+.dch {
+  padding: 2rem 0.57rem !important;
+}
+
 #num_10 {
   margin-bottom: 2.75rem;
+}
+
+#original:after {
+  content: url('./iconos/calavera.png');
+  transform: scale(0.7);
+  display: flex;
+  left: -15%;
+  position: absolute;
+  top: 0%;
+}
+
+#hq_es:after {
+  content: url('./iconos/calavera_negra.png');
+  transform: scale(0.7);
+  display: flex;
+  left: -15%;
+  position: absolute;
+  top: 4.6rem;
 }
 
 @keyframes animacion_panel_iz {
@@ -75,6 +125,16 @@
 @keyframes animacion_panel_iz_no  {
   0%   { left: 0rem; }
   100% { left: -5rem; }
+}
+
+@keyframes animacion_panel_dch {
+  0%   { right: -5rem; }
+  100% { right: 0rem; }
+}
+
+@keyframes animacion_panel_dch_no  {
+  0%   { right: 0rem; }
+  100% { right: -5rem; }
 }
 
 .tirador {
@@ -138,7 +198,7 @@
   position: absolute;
   top: 50%;
   right: 10%;
-  margin-right: 2.28rem;
+  margin-right: 3.50rem;
 }
 
 .cen_arriba {
@@ -180,7 +240,7 @@
   position: absolute;
   top: 30%;
   right: 10%;
-  margin-right: 2.29rem;
+  margin-right: 3.50rem;
 }
 
 .cen_arr_dcho {
@@ -194,7 +254,7 @@
   position: absolute;
   top: 10%;
   right: 10%;
-  margin-right: 2.29rem;
+  margin-right: 3.50rem;
 }
 
 .cen_arr_izq {
@@ -333,7 +393,7 @@
   transform: rotateX(-90deg) translateZ(1.64rem);
 }
 
-.calavera_uno:before {
+.calavera_uno:before, .calavera_unoa:before {
   content: url('./iconos/calavera.png');
   -moz-transform: scale(0.9);
   display: flex;
@@ -342,7 +402,7 @@
   top: 10%;
 }
 
-.calavera_cuatro:before {
+.calavera_cuatro:before, .calavera_cuatroa:before {
   content: url('./iconos/calavera.png');
   -moz-transform: scale(0.6);
   display: flex;
@@ -364,7 +424,7 @@
   content: url('./iconos/escudo_blanco.png');
   -moz-transform: scale(0.7);
   display: flex;
-  left: -19%;
+  left: -0.6rem;
   position: absolute;
   top: -15%;
 }
@@ -382,7 +442,11 @@
   content: url('./iconos/escudo_negro.png');
   -moz-transform: scale(0.6);
   display: flex;
-  left: -18%;
+  left: -17%;
   position: absolute;
   top: -18%;
+}
+
+.negra:before {
+  content: url('./iconos/negra.png') !important;
 }
