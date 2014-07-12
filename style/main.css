@@ -117,6 +117,17 @@
   top: 4.6rem;
 }
 
+#dado_6:after {
+  content: url('./iconos/c_seis.png');
+  transform: scale(0.7);
+  display: flex;
+  left: 0%;
+  position: absolute;
+  top: 9.6rem;
+  height: 4.0rem;
+  width: 3.5rem;
+}
+
 @keyframes animacion_panel_iz {
   0%   { left: -5rem; }
   100% { left: 0rem; }
@@ -449,4 +460,28 @@
 
 .negra:before {
   content: url('./iconos/negra.png') !important;
+}
+
+.c_uno:before {
+  content: url('iconos/c_uno.png') !important;
+}
+
+.c_dos:before {
+  content: url('./iconos/c_dos.png') !important;
+}
+
+.c_tres:before {
+  content: url('./iconos/c_tres.png') !important;
+}
+
+.c_cuatro:before {
+  content: url('./iconos/c_cuatro.png') !important;
+}
+
+.c_cinco:before {
+  content: url('./iconos/c_cinco.png') !important;
+}
+
+.c_seis:before {
+  content: url('./iconos/c_seis.png') !important;
 }

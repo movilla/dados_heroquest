@@ -2,46 +2,46 @@ var nav = document.getElementById('barra_iz');
 if (nav) { nav.innerHTML = '<nav id="panel_iz" class="panel"><a id="num_1" class="num_dados" href="index_1.html">I</a><a id="num_2" class="num_dados" href="index_2.html">II</a><a id="num_3" class="num_dados" href="index_3.html">III</a><a id="num_4" class="num_dados" href="index_4.html">IV</a><a id="num_5" class="num_dados" href="index_5.html">V</a><a id="num_6" class="num_dados" href="index_6.html">VI</a><a id="num_7" class="num_dados" href="index_7.html">VII</a><a id="num_8" class="num_dados" href="index_8.html">VIII</a><a id="num_9" class="num_dados" href="index_9.html">IX</a><a id="num_10" class="num_dados" href="index_10.html">X</a></nav>'; }
 
 var navdch = document.getElementById('barra_dch');
-if (navdch) { navdch.innerHTML = '<nav id="panel_dch" class="panel_dch"><a id="original" class="num_dados dch" href="../index_1.html"></a><a id="hq_es" class="num_dados dch" href="./hq_es/index_1.html"></a></nav>'; }
+if (navdch) { navdch.innerHTML = '<nav id="panel_dch" class="panel_dch"><a id="original" class="num_dados dch" href="../index_1.html"></a><a id="hq_es" class="num_dados dch" href="./hq_es/index_1.html"></a><a id="dado_6" class="num_dados dch" href="./dado_6/index_1.html"></a></nav>'; }
 
 var d1g = document.getElementById('dado_uno grande');
-if (d1g) { d1g.innerHTML = '<div id="primer_dado" class="cubo3d solo"><div class="cara1_uno solo"><a class="calavera_uno first"></a></div><div class="cara2_uno solo"><a class="escudo_negro_uno"></a></div><div class="cara3_uno solo"><a class="calavera_uno"></a></div><div class="cara4_uno solo"><a class="calavera_uno"></a></div><div class="cara5_uno solo"><a class="escudo_blanco_uno"></a></div><div class="cara6_uno solo"><a class="escudo_blanco_uno"></a></div></div>'; }
+if (d1g) { d1g.innerHTML = '<div id="primer_dado" class="cubo3d solo"><div class="cara1_uno solo"><a class="calavera_uno first"></a></div><div class="cara2_uno solo"><a class="escudo_negro_uno second"></a></div><div class="cara3_uno solo"><a class="calavera_uno third"></a></div><div class="cara4_uno solo"><a class="calavera_uno fourth"></a></div><div class="cara5_uno solo"><a class="escudo_blanco_uno fifth"></a></div><div class="cara6_uno solo"><a class="escudo_blanco_uno sixth"></a></div></div>'; }
 
 var d2g = document.getElementById('dado_dos grande');
-if (d2g) { d2g.innerHTML = '<div id="segundo_dado" class="cubo3d solo"><div class="cara1_uno solo"><a class="calavera_uno first"></a></div><div class="cara2_uno solo"><a class="escudo_negro_uno"></a></div><div class="cara3_uno solo"><a class="calavera_uno"></a></div><div class="cara4_uno solo"><a class="calavera_uno"></a></div><div class="cara5_uno solo"><a class="escudo_blanco_uno"></a></div><div class="cara6_uno solo"><a class="escudo_blanco_uno"></a></div></div>'; }
+if (d2g) { d2g.innerHTML = '<div id="segundo_dado" class="cubo3d solo"><div class="cara1_uno solo"><a class="calavera_uno first"></a></div><div class="cara2_uno solo"><a class="escudo_negro_uno second"></a></div><div class="cara3_uno solo"><a class="calavera_uno third"></a></div><div class="cara4_uno solo"><a class="calavera_uno fourth"></a></div><div class="cara5_uno solo"><a class="escudo_blanco_uno fifth"></a></div><div class="cara6_uno solo"><a class="escudo_blanco_uno sixth"></a></div></div>'; }
 
 var d3g = document.getElementById('dado_tres grande');
-if (d3g) { d3g.innerHTML = '<div id="tercero_dado" class="cubo3d solo"><div class="cara1_uno solo"><a class="calavera_uno first"></a></div><div class="cara2_uno solo"><a class="escudo_negro_uno"></a></div><div class="cara3_uno solo"><a class="calavera_uno"></a></div><div class="cara4_uno solo"><a class="calavera_uno"></a></div><div class="cara5_uno solo"><a class="escudo_blanco_uno"></a></div><div class="cara6_uno solo"><a class="escudo_blanco_uno"></a></div></div>'; }
+if (d3g) { d3g.innerHTML = '<div id="tercero_dado" class="cubo3d solo"><div class="cara1_uno solo"><a class="calavera_uno first"></a></div><div class="cara2_uno solo"><a class="escudo_negro_uno second"></a></div><div class="cara3_uno solo"><a class="calavera_uno third"></a></div><div class="cara4_uno solo"><a class="calavera_uno fourth"></a></div><div class="cara5_uno solo"><a class="escudo_blanco_uno fifth"></a></div><div class="cara6_uno solo"><a class="escudo_blanco_uno sixth"></a></div></div>'; }
 
 var d1m = document.getElementById('dado_uno mediano');
-if (d1m) { d1m.innerHTML = '<div id="primer_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+if (d1m) { d1m.innerHTML = '<div id="primer_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro second"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro third"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro fourth"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro fifth"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro sixth"></a></div></div>'; }
 
 var d2m = document.getElementById('dado_dos mediano');
-if (d2m) { d2m.innerHTML = '<div id="segundo_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+if (d2m) { d2m.innerHTML = '<div id="segundo_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro second"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro third"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro fourth"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro fifth"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro sixth"></a></div></div>'; }
 
 var d3m = document.getElementById('dado_tres mediano');
-if (d3m) { d3m.innerHTML = '<div id="tercero_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+if (d3m) { d3m.innerHTML = '<div id="tercero_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro second"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro third"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro fourth"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro fifth"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro sixth"></a></div></div>'; }
 
 var d4m = document.getElementById('dado_cuatro mediano');
-if (d4m) { d4m.innerHTML = '<div id="cuarto_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+if (d4m) { d4m.innerHTML = '<div id="cuarto_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro second"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro third"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro fourth"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro fifth"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro sixth"></a></div></div>'; }
 
 var d5m = document.getElementById('dado_quinto mediano');
-if (d5m) { d5m.innerHTML = '<div id="quinto_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+if (d5m) { d5m.innerHTML = '<div id="quinto_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro second"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro third"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro fourth"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro fifth"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro sixth"></a></div></div>'; }
 
 var d6m = document.getElementById('dado_sexto mediano');
-if (d6m) { d6m.innerHTML = '<div id="sexto_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+if (d6m) { d6m.innerHTML = '<div id="sexto_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro second"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro third"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro fourth"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro fifth"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro sixth"></a></div></div>'; }
 
 var d7m = document.getElementById('dado_septimo mediano');
-if (d7m) { d7m.innerHTML = '<div id="septimo_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+if (d7m) { d7m.innerHTML = '<div id="septimo_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro second"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro third"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro fourth"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro fifth"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro sixth"></a></div></div>'; }
 
 var d8m = document.getElementById('dado_octavo mediano');
-if (d8m) { d8m.innerHTML = '<div id="octavo_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+if (d8m) { d8m.innerHTML = '<div id="octavo_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro second"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro third"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro fourth"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro fifth"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro sixth"></a></div></div>'; }
 
 var d9m = document.getElementById('dado_noveno mediano');
-if (d9m) { d9m.innerHTML = '<div id="noveno_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+if (d9m) { d9m.innerHTML = '<div id="noveno_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro second"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro third"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro fourth"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro fifth"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro sixth"></a></div></div>'; }
 
 var d10m = document.getElementById('dado_decimo mediano');
-if (d10m) { d10m.innerHTML = '<div id="decimo_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro"></a></div></div>'; }
+if (d10m) { d10m.innerHTML = '<div id="decimo_dado" class="cubo3d"><div class="cara1_cuatro"><a class="calavera_cuatro first"></a></div><div class="cara2_cuatro"><a class="escudo_negro_cuatro second"></a></div><div class="cara3_cuatro"><a class="calavera_cuatro third"></a></div><div class="cara4_cuatro"><a class="calavera_cuatro fourth"></a></div><div class="cara5_cuatro"><a class="escudo_blanco_cuatro fifth"></a></div><div class="cara6_cuatro"><a class="escudo_blanco_cuatro sixth"></a></div></div>'; }
 
 
 document.querySelector('#tirar').onclick = function () {
@@ -299,10 +299,39 @@ if (game === "hq_es") {
 	var negra = document.getElementsByClassName('first');
 	for(var i=0;i<negra.length;i++){
 		negra[i].className += ' negra';
-		document.getElementById('hq_es').href = "";
 	}
+	document.getElementById('hq_es').href = "";
+	document.getElementById('dado_6').href = "../dado_6/index_1.html";	
 }
-else {
+if (game === "dado_6") {
+	var c_uno = document.getElementsByClassName('first');
+	for(var i=0;i<c_uno.length;i++){
+		c_uno[i].className += ' c_uno';
+	}
+	var c_dos = document.getElementsByClassName('second');
+	for(var i=0;i<c_dos.length;i++){
+		c_dos[i].className += ' c_dos';
+	}
+	var c_tres = document.getElementsByClassName('third');
+	for(var i=0;i<c_tres.length;i++){
+		c_tres[i].className += ' c_tres';
+	}
+	var c_cuatro = document.getElementsByClassName('fourth');
+	for(var i=0;i<c_cuatro.length;i++){
+		c_cuatro[i].className += ' c_cuatro';
+	}
+	var c_cinco = document.getElementsByClassName('fifth');
+	for(var i=0;i<c_cinco.length;i++){
+		c_cinco[i].className += ' c_cinco';
+	}
+	var c_seis = document.getElementsByClassName('sixth');
+	for(var i=0;i<c_seis.length;i++){
+		c_seis[i].className += ' c_seis';
+	}
+	document.getElementById('dado_6').href = "";
+	document.getElementById('hq_es').href = "../hq_es/index_1.html";
+}
+if (game === null) {
 	document.getElementById('original').href = "";
 }
 
